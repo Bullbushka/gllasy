@@ -39,14 +39,24 @@
                 <img src="img/search.svg" alt="Иконка поиска">
                 Поиск
             </button> 
-            <form action=""></form>
+            <form action="#" method="POST">
+                <input type="search" placeholder="Крем-брюле">
+            </form>
         </div>
         <div>
             <button type="submit">
                 <img src="img/login.svg" alt="Иконка входа">
                 Вход
             </button>
-            <form action=""></form>
+            <form action="#" method="POST">
+                <input type="email" placeholder="email@example.com" required>
+                <input type="password" placeholder="" required>
+                <button type="submit">Вход</button>
+                <div>
+                    <a href="blank.html">Забыли пароль?</a>
+                    <a href="blank.html">Новая регистрация</a>
+                </div>
+            </form>
         </div>
         <div>
             <button type="submit">
@@ -186,7 +196,10 @@
             <img src="img/cansel.svg" alt="Закрыть">
         </button>
         <form action="">
-            <!--Форма обратной связи-->
+            <input type="text" placeholder="Имя Фамилия" required>
+            <input type="email" placeholder="email@example.com" required>
+            <textarea name="" id="" placeholder="В свободной форме"></textarea>
+            <button type="submit">Отправить</button>
         </form>
     </div>
 </body>
