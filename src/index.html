@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
+    
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/icon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/icon/180.png">
+    <link rel="manifest" href="favicon.webmanifest">
+
     <title>Gllacy Shop</title>
 </head>
 <body>
@@ -13,7 +19,7 @@
             <ul>
                 <li>
                     <a>
-                        <img src="img/logo.svg" alt="Логотип Gllacy Shop">
+                        <img src="img/logo.svg" alt="Gllacy Shop">
                     </a>
                 </li>
                 <li>
@@ -35,8 +41,8 @@
             </ul>
         </nav>
         <div>
-            <button type="submit">
-                <img src="img/search.svg" alt="Иконка поиска">
+            <button type="button">
+                <img src="img/search.svg" alt="Поиск">
                 Поиск
             </button> 
             <form action="#" method="POST">
@@ -44,8 +50,8 @@
             </form>
         </div>
         <div>
-            <button type="submit">
-                <img src="img/login.svg" alt="Иконка входа">
+            <button type="button">
+                <img src="img/login.svg" alt="Авторизация">
                 Вход
             </button>
             <form action="#" method="POST">
@@ -59,11 +65,11 @@
             </form>
         </div>
         <div>
-            <button type="submit">
-                <img src="img/basket.svg" alt="Иконка корзины">
+            <button type="button">
+                <img src="img/basket.svg" alt="Корзина">
                 Пусто
             </button>
-            <form action=""></form>
+            <form action="#"></form>
         </div>
         <div>
             <p>с 10 до 20, ежедневно</p>
@@ -75,11 +81,10 @@
         <section>
             <h2>Новинки</h2>
             <figure>
-                <img src="img/ice-cream_1_1.png" alt="Фото мороженого">
-                <img src="img/ice-cream_1_2.png" alt="Фото мороженого">
+                <img src="img/ice-cream_1.png" alt="Крем-брюле и пломбир с малиновым джемом">
                 <figcaption>Крем-брюле и пломбир с малиновым джемом</figcaption>
-                <a href="blank.html">Давайте оба</a>
             </figure>
+            <a href="blank.html">Давайте оба</a>
             <fieldset>
                 <input type="radio" name="slaider" aria-label="1_slaid" value="1" checked>
                 <input type="radio" name="slaider" aria-label="1_slaid" value="2">
@@ -106,33 +111,33 @@
             <ul>
                 <li>
                     <figure>
-                        <img src="img/hit_1.png" alt="">
+                        <img src="img/hit_1.png" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
                         <p>310 ₽<span>/кг</span></p>
-                        <figcapture>Сливочное с апельсиновым джемом и цитрусовой стружкой</figcapture>
+                        <figcaption>Сливочное с апельсиновым джемом и цитрусовой стружкой</figcaption>
                     </figure>
                     <strong>ХИТ</strong>
                 </li>
                 <li>
                     <figure>
-                        <img src="img/hit_2.png" alt="">
+                        <img src="img/hit_2.png" alt="Сливочно-кофейное мороженое с кусочками шоколада">
                         <p>380 ₽<span>/кг</span></p>
-                        <figcapture>Сливочно-кофейное с кусочками шоколада</figcapture>
+                        <figcaption>Сливочно-кофейное с кусочками шоколада</figcaption>
                     </figure>
                     <strong>ХИТ</strong>
                 </li>
                 <li>
                     <figure>
-                        <img src="img/hit_3.png" alt="">
+                        <img src="img/hit_3.png" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
                         <p>355 ₽<span>/кг</span></p>
-                        <figcapture>Сливочно-клубничное с присыпкой из белого шоколада</figcapture>
+                        <figcaption>Сливочно-клубничное с присыпкой из белого шоколада</figcaption>
                     </figure>
                     <strong>ХИТ</strong>
                 </li>
                 <li>
                     <figure>
-                        <img src="img/hit_4.png" alt="">
+                        <img src="img/hit_4.png" alt="Сливочное мороженое крем-брюле с карамельной подливкой">
                         <p>415 ₽<span>/кг</span></p>
-                        <figcapture>Сливочное крем-брюле с карамельной подливкой</figcapture>
+                        <figcaption>Сливочное крем-брюле с карамельной подливкой</figcaption>
                     </figure>
                     <strong>ХИТ</strong>
                 </li>
@@ -156,7 +161,10 @@
         <section>
             <h2>Рассылка</h2>
             <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form action="">
+            <form action="#" method="POST">
+                <input type="email" aria-label="mailing" placeholder="email@example.com">
+                <button type="submit">Отправить</button>
+                
                 <!--Форма рассылки-->
             </form>
         </section>
@@ -201,10 +209,10 @@
         <button type="button">
             <img src="img/cansel.svg" alt="Закрыть">
         </button>
-        <form action="">
+        <form action="#" method="POST">
             <input type="text" placeholder="Имя Фамилия" required>
             <input type="email" placeholder="email@example.com" required>
-            <textarea name="" id="" placeholder="В свободной форме"></textarea>
+            <textarea name="feedback" placeholder="В свободной форме"></textarea>
             <button type="submit">Отправить</button>
         </form>
     </div>
