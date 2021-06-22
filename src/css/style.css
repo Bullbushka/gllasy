@@ -1,3 +1,30 @@
 body {
     background-color: pink;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.catalog .dropdown-list {
+    display: none;
+}
+
+ .catalog:hover .dropdown-list{
+     display: block;
+ }
+
+ .search .drop-form{
+     display: none;
+ }
+
+ .search:hover .drop-form{
+    display: block;
+}
+
+.login .drop-form{
+    display: none;
+}
+
+.login:hover .drop-form{
+   display: block;
 }
