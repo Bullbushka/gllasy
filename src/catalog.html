@@ -1,79 +1,84 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/icon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/icon/180.png">
     <link rel="manifest" href="favicon.webmanifest">
-    
+
     <title>Gllacy Shop</title>
 </head>
+
 <body>
     <header class="main-header">
         <nav>
-            <ul>
-                <li>
-                    <a href="index.html">
+            <ul class="main-navigation">
+                <li class="navigation__item">
+                    <a class="main-header-logo">
                         <img src="img/logo/logo.svg" alt="Gllacy Shop">
                     </a>
                 </li>
-                <li>
-                    <a href="catalog.html">Каталог</a>
-                    <ul>
-                        <li><a href="blank.html"><strong>Новинки</strong></a></li>
-                        <li><a>Сливочное</a></li>
+                <li class="navigation__item catalog">
+                    <a class="underline" href="catalog.html">Каталог</a>
+                    <ul class="dropdown-list">
+                        <li>
+                            <a href="blank.html"></a><strong>Новинки</strong></li>
+                        <li><a href="catalog.html">Сливочное</a></li>
                         <li><a href="blank.html">Щербеты</a></li>
                         <li><a href="blank.html">Фруктовый лед</a></li>
                         <li><a href="blank.html">Мелорин</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="blank.html">Доставка и оплата</a>
+                <li class="navigation__item">
+                    <a class="underline" href="blank.html">Доставка и оплата</a>
                 </li>
-                <li>
-                    <a href="blank.html">О компании</a>
+                <li class="navigation__item">
+                    <a class="underline" href="blank.html">О компании</a>
                 </li>
             </ul>
         </nav>
-        <div>
-            <button type="button">
-                <img src="img/search.svg" alt="Поиск">
-                Поиск
-            </button> 
-            <form action="#" method="POST">
-                <input type="search" placeholder="Крем-брюле">
+        <div class="search">
+            <button class="search__button nav__button" type="button">
+                <img class="block-image" src="img/search.svg" alt="Поиск" width="16px" height="16px">
+            </button>
+            <form class="search__form drop-form" action="#" method="POST">
+                <input class="input" type="search" placeholder="Крем-брюле">
             </form>
         </div>
-        <div>
-            <button type="button">
-                <img src="img/login.svg" alt="Авторизация">
+        <div class="login">
+            <button class="login__button nav__button" type="button">
+                <img class="block-image"  src="img/login.svg" alt="Авторизация" width="16px" height="16px">
                 Вход
             </button>
-            <form action="#" method="POST">
-                <input type="email" placeholder="email@example.com" required>
-                <input type="password" placeholder="" required>
-                <button type="submit">Вход</button>
+            <form class="login__form drop-form" action="#" method="POST">
+                <input class="input" type="email" placeholder="email@example.com" required>
+                <input class="input" type="password" placeholder="......" required>
+                <button class="button drop-form__button" type="submit">Вход</button>
                 <div>
-                    <a href="blank.html">Забыли пароль?</a>
-                    <a href="blank.html">Новая регистрация</a>
+                    <a class="help-link underline-black" href="blank.html">Забыли пароль?</a>
+                    <a class="help-link underline-black" href="blank.html">Новая регистрация</a>
                 </div>
             </form>
         </div>
-        <div>
-            <button type="button">
-                <img src="img/basket.svg" alt="Корзина">
+        <div class="basket">
+            <button class="basket__button nav__button" type="button"> 
+                <img class="block-image"  src="img/basket.svg" alt="Корзина"  width="16px" height="16px">
                 Пусто
             </button>
-            <form action="#"></form>
+            <form class="basket__form" action="#"></form>
         </div>
-        <div>
-            <p>с 10 до 20, ежедневно</p>
-            <a href="tel:88124502525">8 812 450-25-25</a> 
+        <div class="contact-header">
+            <p class="contact_time">с 10 до 20, ежедневно</p>
+            <a class="contact_phone" href="tel:88124502525">8 812 450-25-25</a>
         </div>
     </header>
     <main>
@@ -204,7 +209,8 @@
         <nav>
             <a>&lt;</a>
             <ol>
-                <li><a></a>1</li>
+                <li>
+                    <a></a>1</li>
                 <li><a href="blank.html">2</a></li>
                 <li><a href="blank.html">3</a></li>
                 <li><a href="blank.html">4</a></li>
@@ -214,28 +220,37 @@
         </nav>
     </main>
     <footer class="main-footer">
-        <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">ВКонтакте</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
+        <ul class="social-media">
+            <li class="social-media__item">
+                <a class="outline" href="#"><img src="img/decoration/facebook.svg" alt="Facebook" width="32px" height="32px"></a>
+            </li>
+            <li class="social-media__item">
+                <a class="outline" href="#"><img src="img/decoration/Vk.svg" alt="ВКонтакте" width="32px" height="32px"></a>
+            </li>
+            <li class="social-media__item">
+                <a class="outline" href="#"><img src="img/decoration/Instagram.svg" alt="Instagram" width="32px" height="32px"> </a>
+            </li>
+            <li class="social-media__item">
+                <a class="outline" href="#"><img src="img/decoration/twitter.svg" alt="Twitter" width="32px" height="32px"> </a>
+            </li>
         </ul>
-        <nav>
-            <ul>
-                <li>
-                    <a href="blank.html">Для поставщиков</a>
+        <nav class="footer-nav">
+            <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                    <a class="underline important" href="blank.html">Для поставщиков</a>
                 </li>
-                <li>
-                    <a href="blank.html">О производстве</a>
+                <li class="footer-nav__item">
+                    <a class="underline" href="blank.html">О производстве</a>
                 </li>
-                <li>
-                    <a href="blank.html">Наши документы</a>
+                <li class="footer-nav__item">
+                    <a class="underline" href="blank.html">Наши документы</a>
                 </li>
-                <li>
-                    <a href="blank.html">Экологические стандарты</a>
+                <li class="footer-nav__item">
+                    <a class="underline" href="blank.html">Экологические стандарты</a>
                 </li>
             </ul>
         </nav>
     </footer>
 </body>
+
 </html>
